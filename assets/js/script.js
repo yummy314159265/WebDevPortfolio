@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             heroColumn.classList.add('is-half');
             heroColumn.classList.remove('is-full');
             bigCardColumn.setAttribute('style', 'margin: 0');
-        }, 500)
+        }, 270)
     }, true)
 
     const createBigCardEl = (card) => {
