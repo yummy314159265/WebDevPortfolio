@@ -15,43 +15,65 @@ document.addEventListener('DOMContentLoaded', ()=> {
             heroColumn.classList.add('is-half');
             heroColumn.classList.remove('is-full');
             bigCardColumn.setAttribute('style', 'margin: 0');
-        }, 270)
+        }, 300)
     }, true)
 
-    const createBigCardEl = (card) => {
+    const slideCardLeft = () => {
         
+    }
+
+    const createBigCardEl = (card) => {
+
+        removePreviousElement();
+        
+        const bigCardDivEl = document.createElement('div');
+        bigCardDivEl.classList.add('card');
+
+        const cardImg = createCardImageEl(card);
+        const cardContent = createCardContentEl(card);
+
+        bigCardDivEl.appendChild(cardImg);
+        bigCardDivEl.appendChild(cardContent);
+
+        bigCardColumn.appendChild(bigCardDivEl);
+    }
+
+    const removePreviousElement = () => {
         if(bigCardColumn.firstChild) {
             bigCardColumn.removeChild(bigCardColumn.firstChild);
         }
+    }
 
-        const cardDivEl = document.createElement('div');
-        
+    const createCardImageEl = (card) => {
         const imgEl = document.createElement('img');
         const figureEl = document.createElement('figure');
         const imgDivEl = document.createElement('div');
-        
-        const contentDivEl = document.createElement('div');
-        const cardContentDivEl = document.createElement('div');
-        
-        cardDivEl.classList.add('card');
-        figureEl.classList.add(['image', 'is-1by1']);
-        imgDivEl.classList.add('card-image');
-        contentDivEl.classList.add('content');
-        cardContentDivEl.classList.add('card-content');
 
-        imgEl.setAttribute('src', 'https://via.placeholder.com/700');
+        figureEl.classList.add(['image', 'is-4by3']);
+        imgDivEl.classList.add('card-image');
+
+        imgEl.setAttribute('src', 'https://via.placeholder.com/700x525');
         imgEl.setAttribute('alt', 'placeholder'); // card title
-        
+
         figureEl.appendChild(imgEl);
         imgDivEl.appendChild(figureEl);
 
-        const projectDescription = document.createTextNode('description placeholder');
+        return imgDivEl;
+    }
+
+    const createCardContentEl = (card) => {
+        const contentDivEl = document.createElement('div');
+        const cardContentDivEl = document.createElement('div');
+        
+        contentDivEl.classList.add('content');
+        cardContentDivEl.classList.add('card-content');
+
+        const projectDescription = document.createTextNode('description placeholder'); // from small card
+        
         contentDivEl.appendChild(projectDescription);
         cardContentDivEl.appendChild(contentDivEl);
-        
-        cardDivEl.appendChild(imgDivEl);
-        cardDivEl.appendChild(cardContentDivEl);
 
-        bigCardColumn.appendChild(cardDivEl);
+        return cardContentDivEl;
     }
+
 })
