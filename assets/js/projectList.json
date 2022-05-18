@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Ape Simulator",
+        "skills": ["HTML", "CSS", "Javascript", "Git", "Polygon.io", "Bulma"],
+        "description": "Frontend for a paper-trading app",
+        "img": "./assets/images/apesim300x300.png",
+        "bigImg": "./assets/images/apesim700x525.png",
+        "github": "https://github.com/yummy314159265/StockMarketSimulator",
+        "deployment": "https://yummy314159265.github.io/StockMarketSimulator/" 
+    },
+
+    {
+        "name": "Employee Tracker",
+        "skills": ["Node", "MYSQL"],
+        "description": "Command line app for tracking employees",
+        "img": "./assets/images/emptracker300x300.png",
+        "bigImg": "./assets/images/emptracker700x525.png",
+        "github": "https://github.com/yummy314159265/EmployeeTracker",
+        "deployment":"https://watch.screencastify.com/v/YM5U44eVLwBDcqnFPgnf"
+    },
+
+    {
+        "name": "Recursnake",
+        "skills": ["HTML", "CSS", "Javascript"],
+        "description": "Snake game for browser",
+        "img": "./assets/images/recursnake300x300.png",
+        "bigImg": "./assets/images/recursnake700x525.png",
+        "github": "https://github.com/yummy314159265/Recursnake",
+        "deployment":"https://yummy314159265.github.io/Recursnake/public/"
+    },
+
+    {
+        "name": "UFO Tracker",
+        "skills": ["HTML", "CSS", "Express", "Node", "MYSQL", "Sequelize", "Bulma", "D3", "bcrypt"],
+        "description": "Tracks UFO sightings across the US",
+        "img": "./assets/images/ufoproject300x300.png",
+        "bigImg": "./assets/images/ufoproject700x525.png",
+        "github": "https://github.com/yummy314159265/UfoTracker",
+        "deployment":"https://ufo-project.herokuapp.com/"
+    }
+]

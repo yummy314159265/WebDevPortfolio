@@ -8,82 +8,67 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css" />
 </head>
 
-<body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top">
-        <div class="container is-justify-content-space-around">
-            <div class="navbar-item">
-                <a class="title is-4" href="mailto:rodin.grajo@gmail.com">
-                    email
-                </a>
-            </div>
-            <div class="navbar-item">
-                <a class="title is-4" href="https://github.com/yummy314159265">
-                    github
-                </a>
-            </div>
-            <div class="navbar-item">
-                <a class="title is-4" href="https://www.linkedin.com/in/rodin-grajo-ba6ba7137/">
-                    linkedin
-                </a>
-            </div>
-        </div>
-    </nav>
+<body>
     <section class="section">
         <div class="container">
-            <div class="columns level">
+            <header class="columns level" id="header">
                 <div class="column is-full" id="hero-column">
                     <section class="hero is-large">
                         <div class="hero-body has-text-centered">
                             <p class="title is-1">
                                 Rodin Grajo
                             </p>
-                            <p class="subtitle">
+                            <p class="subtitle has-text-weight-bold">
                                 full stack web developer
                             </p>
+                            <a class="is-size-4 has-text-weight-bold" href="mailto:rodin.grajo@gmail.com" target="_blank">
+                                email
+                            </a>
+                            <a class="is-size-4 has-text-weight-bold" href="https://github.com/yummy314159265" target="_blank">
+                                github
+                            </a>
+                            <a class="is-size-4 has-text-weight-bold" href="https://www.linkedin.com/in/rodin-grajo-ba6ba7137/" target="_blank">
+                                linkedin
+                            </a>
                         </div>
                     </section>
                 </div>
-                <div class="column level-item" id="big-card-column">              
-                </div>
-            </div>
+            </header>
             <div class="columns" id="bottom-cards">
                 <div class="column is-one-fourth">
-                    <div class="card">
+                    <div class="card" data-project="0">
                         <div class="card-image">
                             <figure class="image is-1by1">
-                                <img src="https://via.placeholder.com/300" alt="placeholder">
+                                <img>
                             </figure>
                         </div>
                         <div class="card-header">
                             <p class="card-header-title is-justify-content-center">
-                                Project #1
                             </p>
                         </div>
                     </div>
                 </div> 
                 <div class="column is-one-fourth">
-                    <div class="card">
+                    <div class="card" data-project="1">
                         <div class="card-image">
                             <figure class="image is-1by1">
                                 <img src="https://via.placeholder.com/300" alt="placeholder">
                             </figure>
                         </div>
- 
                         <div class="card-header">
                             <p class="card-header-title is-justify-content-center">
-                                Project #2
                             </p>
                         </div>
                     </div>
                 </div>     
                 <div class="column is-one-fourth">
-                    <div class="card">
+                    <div class="card" data-project="2">
                         <div class="card-image">
                             <figure class="image is-1by1">
                                 <img src="https://via.placeholder.com/300" alt="placeholder">
@@ -91,13 +76,12 @@
                         </div> 
                         <div class="card-header">
                             <p class="card-header-title is-justify-content-center">
-                                Project #3
                             </p>
                         </div>
                     </div>
                 </div>                     
                 <div class="column is-one-fourth">
-                    <div class="card">
+                    <div class="card" data-project="3">
                         <div class="card-image">
                             <figure class="image is-1by1">
                                 <img src="https://via.placeholder.com/300" alt="placeholder">
@@ -105,7 +89,6 @@
                         </div> 
                         <div class="card-header">
                             <p class="card-header-title is-justify-content-center">
-                                Project #4
                             </p>
                         </div>
                     </div>
@@ -114,7 +97,7 @@
         </div>
     </section>
         
-    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>

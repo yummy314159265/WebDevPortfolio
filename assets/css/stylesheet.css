@@ -1,26 +1,53 @@
-* {
-    transition: all .5s ease-in-out;
+:root {
+    --main-bg-color: #e9e8d7;
+    --main-font-color: #286f8b;
 }
 
-.hero {
+* {
+    transition: all .5s ease-in-out;
     font-family: 'Roboto Mono', monospace;
 }
 
-.card, .navbar {
-    font-family: 'Roboto', sans-serif;
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
 }
 
-.navbar {
-    background-color: rgba(255, 255, 255, 0);
+.hero a {
+    color: var(--main-font-color)
+}
+
+.hero a:hover {
+    color: black;
+}
+
+.title, .subtitle {
+    color: var(--main-font-color);
+}
+
+.card-header-title, .card-content, .card-content a, .card-footer {
+    color: var(--main-bg-color);
+    background-color: var(--main-font-color);
+    font-weight: 700;
+}
+
+.selected {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-content a:hover {
+    color: black;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
 }
 
 #bottom-cards .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
     z-index: 3;
     cursor: pointer;
-}
-
-#big-card-column {
-    margin: 0 0 0 500px;
 }
