@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
         event.stopPropagation();
         const card = event.target.closest('.card');
 
-        const currentBigCard = document.querySelector('#big-card-column');
-        
-        if(currentBigCard){
-            slideCardUp(currentBigCard);
-            setTimeout(()=>currentBigCard.remove(), 300);
-        }
-
         if(card){
+            const currentBigCard = document.querySelector('#big-card-column');
+        
+            if(currentBigCard){
+                slideCardUp(currentBigCard);
+                setTimeout(()=>currentBigCard.remove(), 300);
+            }
+
             const bigCard = createBigCardColumn(card);
             header.appendChild(bigCard);
             slideCardLeft(bigCard);
